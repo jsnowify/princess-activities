@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activities</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#darkmode">Dark Mode</a>
+      <a href="#cart">Cart</a>
+      <a href="#profile">Profile</a>
+      <a href="#slider">Slider</a>
+      <a href="#form">Form</a>
+    </nav>
+
+    <!-- 1. Dark Mode Switch -->
+    <section id="darkmode">
+      <h2>1. Dark Mode Switch 🌙</h2>
+      <button class="switch-btn" id="toggleDark">Switch Dark Mode</button>
+    </section>
+
+    <!-- 2. Add to Cart -->
+    <section id="cart">
+      <h2>2. Add to Cart 🛍️</h2>
+      <div class="cart">
+        <p>🧸 Cute Pink Hoodie</p>
+        <button id="addCart">Add to Cart</button>
+        <p id="cartCount">Cart: 0 items</p>
+      </div>
+    </section>
+
+    <!-- 3. Hover Profile -->
+    <section id="profile">
+      <h2>3. Hover Profile 👩🏻‍💻</h2>
+      <div class="profile">
+        <img src="img/profile.jpg" alt="Profile" />
+        <h4>Princess Zyrell</h4>
+        <p>Front-end Designer 💖</p>
+      </div>
+    </section>
+
+    <!-- 4. Image Slider -->
+    <section id="slider">
+      <h2>4. Simple Image Slider 🖼️</h2>
+      <div class="slider">
+        <img
+          src="https://placekitten.com/250/200"
+          class="active"
+          alt="slide1"
+        />
+        <img src="https://placebear.com/250/200" alt="slide2" />
+        <img src="https://picsum.photos/250/200" alt="slide3" />
+        <br />
+        <button id="nextSlide">Next</button>
+      </div>
+    </section>
+
+    <!-- 5. Simple Form -->
+    <section id="form">
+      <h2>5. Simple Form Validation 📝</h2>
+      <form id="signupForm">
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Enter username" />
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter email" />
+        <button type="submit">Submit</button>
+        <p class="message" id="formMsg"></p>
+      </form>
+    </section>
+
+    <footer>© 2025 Princess Zyrell | All Rights Reserved 🌸</footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
